@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="./assets/css/custom.min.css">
+
+    <link rel="preload" href="./assets/css/responsive.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/responsive.min.css">
+    </noscript>
+    <link rel="preload" href="./assets/css/swiper-bundle.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    </noscript>
+<style type="">
+/*faq start*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+ /* a{
+    color: #273F43;
+    font-weight: 700;
+}
+a:hover{
+    color: #273F43;
+    font-weight: 700;
+}  */
+.panel-heading a{
+    color: #333333;
+    font-weight: bolder;
+}
+.panel-heading a:hover{
+    color:#333333;
+    font-weight: bolder;
+}
+a.collapsed {
+    color: #333333;
+    font-weight: bolder;
+}
+a.collapsed:hover {
+    color: #333333;
+    font-weight: bolder;
+}
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
+
+
+/*faq end*/
+    .card {
+     margin-bottom: 1rem;
+}
+ .list-view .row > [class*='col-'] {
+     max-width: 100%;
+     flex: 0 0 100%;
+}
+ .list-view .card {
+     flex-direction: row;
+}
+ @media (max-width: 575.98px) {
+     .list-view .card {
+         flex-direction: column;
+    }
+}
+ .list-view .card > .card-img-top {
+     width: auto;
+}
+ .list-view .card .card-body {
+     display: inline
+     -block;
+}
+h2{
+    font-weight:bold;
+}
+@media only screen and (max-width: 768px) {
+   
+    .ml-s5{
+        margin-left:0px!important;
+    }
+}
+.w-75 {
+    width: 66%!important;
+}
+</style>
+
+</head>
+
+<body>
+    <div id="home">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-hover fixed-top ">
+            <div class="container">
+                <a class="logo-white" href="/"><img loading="lazy" src="./assets/images/header-logo.svg"
+                        class="img-fluid" alt="header-logo"></a>
+                <a class="logo-color d-none" href="/"><img loading="lazy" src="./assets/images/logo-colored.svg"
+                        class="img-fluid" alt="header-logo"></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHover"
+                    aria-controls="navbarDD" aria-expanded="false" aria-label="Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarHover">
+                    <div class="ml-5 w-100 my-auto ml-s5">
+                        <div class="form-group has-search my-auto w-75 mx-auto">
+                            <span class="icon-search form-control-feedback"></span>
+                            <input type="text" class="form-control" placeholder="Search by suburb or date">
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Help </a>
+                        </li>
+
+                        <div class="dropdown px-2 pb-2 pb-md-0">
+                            <button class="btn  dropdown-toggle dropdown-hamburger" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span><img src="./assets/images/ic-profile.svg" alt="ic-profile"></span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./edit_profile.html">Edit Profile</a>
+                                <a class="dropdown-item" href="./my_booking_popup.html">My Booking</a>
+                                <a class="dropdown-item" href="./manage_cards.html">Manage Cards</a>
+                                <a class="dropdown-item" href="#">Help</a>
+                                <a class="dropdown-item" href="#">Sign Out</a>
+                              </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="sectional-padding"></div>
+        <div class="sectional-padding"></div>
+        <section class="bg-gray-body">
+            <div class="sectional-padding"></div>
+           
+<!-- /.container -->
+<!-- faq start -->
+<div class="container">
+<div class="row">
+    <h2 class="text-center pl-3">FAQ</h2><br>
+
+</div>
+
+<div class="row">
+<div class="col-md-12">
+<div class="panel-group card" id="accordion" role="tablist" aria-multiselectable="true">
+    <h3 class="py-2">Services</h3>
+    <div class="panel panel-default py-2">
+        <div class="panel-heading" role="tab" id="headingOne">
+             <h6 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What does self-service mean?
+        </a>
+      </h6>
+
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse show in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                
+                Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>
+        </div>
+    </div>
+    <div class="panel panel-default py-2">
+        <div class="panel-heading" role="tab" id="headingTwo">
+             <h6 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What does Hire Period mean?
+        </a>
+      </h6>
+
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                
+                Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>
+        </div>
+    </div>
+    <div class="panel panel-default py-2">
+        <div class="panel-heading" role="tab" id="headingThree">
+             <h6 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How does self-service work?
+        </a>
+      </h6>
+
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                
+                Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>        </div>
+    </div>
+</div>
+</div>
+  <div class="col-md-12">
+    <div class="panel-group card" id="accordion" role="tablist" aria-multiselectable="true">
+         <h3 class="py-2">Trailers</h3>
+        <div class="panel panel-default py-2">
+            <div class="panel-heading" role="tab" id="headingFour">
+                 <h6 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Where are the Trailers located?
+            </a>
+          </h6>
+    
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                    Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                    Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                    Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                    
+                    Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                    Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                    Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                    Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>
+            </div>
+        </div>
+        <div class="panel panel-default py-2">
+            <div class="panel-heading" role="tab" id="headingFive">
+                 <h6 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Can I insure the trailer against damage?
+            </a>
+          </h6>
+    
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                    Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                    Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                    Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                    
+                    Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                    Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                    Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                    Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>
+            </div>
+        </div>
+        <div class="panel panel-default py-2">
+            <div class="panel-heading" role="tab" id="headingSix">
+                 <h6 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                What type of plugs do the Trailers have?
+            </a>
+          </h6>
+    
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                    Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                    Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                    Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                    
+                    Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                    Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                    Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                    Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>        </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-12">
+    <div class="panel-group card" id="accordion" role="tablist" aria-multiselectable="true">
+        <h3 class="py-2">Payment</h3>
+        <div class="panel panel-default py-2">
+            <div class="panel-heading" role="tab" id="headingSeven">
+                 <h6 class="panel-title">
+            <a class="collapsed"  data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                What are the payment options?
+            </a>
+          </h6>
+    
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSeven">
+                <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                    Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                    Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                    Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                    
+                    Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                    Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                    Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                    Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>
+            </div>
+        </div>
+        <div class="panel panel-default py-2">
+            <div class="panel-heading" role="tab" id="headingEight">
+                 <h6 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Is it secure to pay online?
+            </a>
+          </h6>
+    
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                    Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                    Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                    Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                    
+                    Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                    Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                    Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                    Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>
+            </div>
+        </div>
+        <div class="panel panel-default py-2">
+            <div class="panel-heading" role="tab" id="headingNine">
+                 <h6 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Why do I pay a security deposit and do I get it back?
+            </a>
+          </h6>
+    
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                <div class="panel-body">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim  
+                    Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat. Duis Aute Irure Dolor In 
+                    Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur. Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In 
+                    Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum.<br><br>
+                    
+                    Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa 
+                    Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae Vitae Dicta Sunt Explicabo. Nemo Enim Ipsam Voluptatem Quia Voluptas Sit 
+                    Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt. Neque Porro Quisquam 
+                    Est, Qui Dolorem Ipsum Quia Dolor Sit Amet, Consectetur, Adipisci Velit</div>        </div>
+        </div>
+    </div>
+</div>
+  
+  
+</div>
+</div>
+
+<!-- faq end -->
+            <div class="sectional-padding"></div>
+
+            
+        </section>
+
+
+        <!--Site footer-->
+        <footer class="footer bg-gray">
+            <div class="sectional-padding"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4">
+                        <div class="footer-logo">
+                            <a href="./index.html"><img loading="lazy" src="./assets/images/logo-colored.svg" alt="footer_logo"
+                                    class=" img-responsive "></a>
+                        </div>
+                        <p class=" mt-4">Anytime Trailer Hire is the first company in
+                            Melbourne to offer a new way of hiring trailers,
+                            which is affordable, easy and convenient. You can
+                            book a trailer online and pick it up any time
+                            during the hire period.</p>
+                        <div class="d-flex my-3">
+                            <a href="#" class="pr-3">
+                                <img loading="lazy" src="./assets/images/ic_facebook.svg" alt="icon_facebook"
+                                    class="img-responsive ">
+                            </a>
+                            <a href="#" class="pr-3">
+                                <img loading="lazy" src="./assets/images/ic_skype.svg" alt="icon_skype" class="">
+                            </a>
+                            <a href="#" class="pr-3">
+                                <img loading="lazy" src="./assets/images/ic_linkedin.svg" alt="icon_linkedin"
+                                    class="img-responsive ">
+                            </a>
+                            <a href="#">
+                                <img loading="lazy" src="./assets/images/ic_instagram.svg" alt="icon_instagram"
+                                    class="img-responsive ">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <ul class="footer-menu  pl-lg-4 mt-3 mt-md-0">
+                            <li>
+                                <p class="footer-headings  pb-2 mb-0">About</p>
+                            </li>
+                            <li><a href="./index.html" class="footer-line-height">Home</a></li>
+                            <li><a href="./aboutus.html" class="footer-line-height">About Us</a></li>
+                            <li><a href="./browse.html" class="footer-line-height">Services</a></li>
+                            <li><a href="#" class="footer-line-height">Blog</a></li>
+                            <li><a href="#" class="footer-line-height">Pages</a></li>
+                            <li><a href="#" class="footer-line-height">Track</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <ul class="footer-menu">
+                            <li>
+                                <p class="footer-headings  pb-2  mb-0">Need Some Help?</p>
+                            </li>
+                            <li><a href="./faq.html" class="footer-line-height">FAQs</a></li>
+                            <li><a href="#" class="footer-line-height">Child safety</a></li>
+                            <li><a href="#" class="footer-line-height">Help Centre</a></li>
+                            <li><a href="#" class="footer-line-height">Contact</a></li>
+                            <li><a href="#" class="footer-line-height">Academy</a></li>
+                            <!-- <li><a href="#" class="footer-line-height">FAQ</a></li> -->
+                        </ul>
+
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="footer-headings  pb-2  mt-3 mt-md-0  mb-0">Contact Us</p>
+                        <div class="footer-menu">
+                            <div class="d-flex">
+                                <span class="location-icon pr-2"></span>
+                                <p class="mb-2">
+                                    DANDENONG CRANBOURNE CARRUM DOWNS
+                                </p>
+                            </div>
+                            <div class="d-flex">
+                                <span class="phone-icon pr-2"></span>
+                                <div class="mb-2"><a href="tel:1300 457 099">1300 457 099 </a><br>
+                                    <a href="tel:1300 457 099">1300 457 099</a>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="mail-icon pr-2"></span>
+                                <a href="#" class="mb-2">
+                                    info@anytimetrailerhire.com.au</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <hr class="footer-hr">
+                <div class="row">
+                    <div class="col-md-6  text-center text-lg-left  mb-2">
+                        <p class="">© 2021-2022 ANYTIME TRAILER HIRE | All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 mx-auto text-center">
+                        <div class="footer-menu">
+                            <div class="d-md-flex  float-md-right float-none">
+                                <a href="./terms-conditions.html" class=" terms-link">Terms of Use</a> <span class="px-2"> | </span>
+                                <a href="./privacy-policy.html" class="">Privacy Policy</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- jquery-3.5.1 -->
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap 4 JS -->
+    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- custom js-->
+    <script defer src="./assets/js/custom.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+        integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+        crossorigin="anonymous"></script>
+<script>
+    
+
+function showList(e) {
+  var $gridCont = $('.grid-container');
+  e.preventDefault();
+  $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
+}
+function gridList(e) {
+  var $gridCont = $('.grid-container')
+  e.preventDefault();
+  $gridCont.removeClass('list-view');
+}
+$(document).click(function(e) {
+    if (!$(e.target).is('.panel-body')) {
+        $('.collapse').collapse('hide');        
+    }
+});
+$(document).on('click', '.btn-grid', gridList);
+$(document).on('click', '.btn-list', showList);
+</script>
+</body>
+
+</html>
